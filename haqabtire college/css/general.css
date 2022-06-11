@@ -22,6 +22,8 @@ color-secondary-light: #ecf2f3;
 #555
 #777
  */
+@import './queries.css';
+@import './style.css';
 
 *,
 *::after,
@@ -30,6 +32,8 @@ color-secondary-light: #ecf2f3;
   margin: 0;
   box-sizing: inherit;
 }
+
+/*        STYLES       */
 
 html {
   /* it means the root font-size is 10px this helps to use rem instead of pixels */
@@ -60,7 +64,7 @@ body {
   line-height: 1.1;
   font-weight: 700;
   /* margin-bottom: 3.2rem; */
-  animation: moveInRight 0.6s ease-out;
+  /* animation: moveInRight 0.6s ease-out; */
   backface-visibility: hidden;
   animation: moveInRight 0.6s ease-out;
 }

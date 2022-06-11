@@ -1,27 +1,27 @@
 // Make mobile Naviagation work //
-const btnNavEl = document.querySelector('.btn-mobile-nav')
-const headerEl = document.querySelector('.header')
+const btnNavEl = document.querySelector('.btn-mobile-nav');
+const headerEl = document.querySelector('.header');
 
 btnNavEl.addEventListener('click', function () {
-  headerEl.classList.toggle('nav-open')
-})
+  headerEl.classList.toggle('nav-open');
+});
 
 ///////////////////////////////////////////////////////////
 // Sticky navigation
 
-const sectionHeroEl = document.querySelector('.section-hero')
+const sectionHeroEl = document.querySelector('.section-hero');
 
 const obs = new IntersectionObserver(
   function (entries) {
-    const ent = entries[0]
-    console.log(ent)
+    const ent = entries[0];
+    console.log(ent);
 
     if (ent.isIntersecting === false) {
-      document.body.classList.add('sticky')
+      document.body.classList.add('sticky');
     }
 
     if (ent.isIntersecting === true) {
-      document.body.classList.remove('sticky')
+      document.body.classList.remove('sticky');
     }
   },
   {
@@ -30,4 +30,4 @@ const obs = new IntersectionObserver(
     threshold: 0,
     rootMargin: '-80px',
   },
-)
+);
